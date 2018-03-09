@@ -1,0 +1,21 @@
+<div class="recipes">
+  <div>
+    <form>
+      <input placeholder="Create new receipe..." 
+        [(ngModel)]="newRecipe.title"
+        class="textfield" name="newRecipe.title"/>
+      <h2>Add the steps below</h2>
+      <textarea rows="10" cols="58" [(ngModel)]="newRecipe.description" name="newRecipe.description"></textarea>
+      <div>
+        <button (click)="addRecipe()">Add New Recipe</button>
+        <button (click)="updateRecipe()">Update Recipe</button>
+      </div>
+    </form>
+  </div>
+  <ul>
+    <li *ngFor="let recipe of recipes; let i=index">
+      <span (click)="editRecipe(i)">{{ recipe.newRecipe.title }}</span>
+      <span (click)="deleteRecipe(i)" class="delete-icon">[&#10006;]</span>
+    </li>
+  </ul>
+</div>

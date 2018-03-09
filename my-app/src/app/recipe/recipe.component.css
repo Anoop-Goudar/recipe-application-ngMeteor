@@ -1,0 +1,39 @@
+.box1 {
+    border: solid 1px #006699;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 5px;
+  }
+
+  .recipes input.textfield {
+    width: 480px;
+    height: 36px;
+    margin-right: 20px;
+    font-size: 1.4em;
+    vertical-align: top;
+  }
+
+  .recipes input.checkbox {
+    width: 20px;
+    height: 20px;
+  }
+
+  .recipes .checked {
+    text-decoration: line-through;
+  }
+
+  .recipes button {
+    height: 36px;
+    font-size: 1.1em;
+    vertical-align: top;
+    border: solid 1px #999;
+    border-radius: 2px;
+  }
+
+  .recipes .delete-icon {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .button {
+    display: block;
+  }
